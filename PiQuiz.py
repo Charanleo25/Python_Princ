@@ -1,4 +1,9 @@
-# Quiz Game
+#Author: Charan Leo25
+#Brief about the code is at the end of this file.
+#Time to cook this code: 3 hours 
+
+
+# Quiz Game code starts from here
 def run_quiz(questions):
     print("Answer each question by typing the full correct option.")
 
@@ -62,3 +67,25 @@ def main():
 
 if __name__ == "__main__":
     main()
+
+"""
+This Python code defines a simple quiz game with two roles: participant and admin. 
+The program begins with a set of quiz questions stored in the quiz_questions list, 
+where each question is represented as a tuple containing the question string and the 
+correct answer. The main functionality is encapsulated in the following functions:
+run_quiz(questions): This function takes a list of questions as input and runs the quiz 
+for the participant. It iterates through each question, prompts the user for an answer, 
+checks if it's correct, and keeps track of the score. At the end of the quiz, it displays 
+the participant's score and provides feedback on their performance.
+
+admin_role(questions): This function allows an admin to add more questions to the quiz. 
+It enters a loop where the admin can input a new question and its answer. The loop 
+continues until the admin decides to stop adding questions. Afterward, the program 
+returns to the main menu.
+
+main(): This is the main function that serves as the entry point of the program. 
+It displays a welcome message and a menu with options for the user to select their 
+role (participant or admin). Depending on the choice, it either calls run_quiz for 
+the participant or admin_role for the admin. If an invalid choice is made, it defaults 
+to running the quiz for the participant.
+"""
